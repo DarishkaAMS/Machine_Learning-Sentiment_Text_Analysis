@@ -1,8 +1,8 @@
 from textblob import TextBlob
 from newspaper import Article
-import nltk
-
-nltk.download('punkt')
+# import nltk
+#
+# nltk.download('punkt')
 
 url = 'https://en.wikipedia.org/wiki/Cartier_(jeweler)'
 article = Article(url)
@@ -11,6 +11,10 @@ article.download()
 article.parse()
 article.nlp()
 
-text = article.text
-# text = article.summary
-# print(text)
+# text = article.text
+text = article.summary
+print(text)
+
+blob = TextBlob(text)
+sentiment = blob.sentiment.polarity # -1 to 1
+print(sentiment)
