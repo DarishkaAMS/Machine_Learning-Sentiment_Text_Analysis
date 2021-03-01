@@ -1,5 +1,6 @@
 from textblob import TextBlob
 from newspaper import Article
+
 # import nltk
 #
 # nltk.download('punkt')
@@ -23,5 +24,5 @@ text = article.summary
 print(text)
 
 blob = TextBlob(text)
-sentiment = blob.sentiment.polarity # -1 to 1
+sentiment = blob.sentiment.polarity  # -1 to 1
 print(sentiment)
