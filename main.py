@@ -12,4 +12,5 @@ article.parse()
 article.nlp()
 
 text = article.text
-print(text)
+# text = article.summary
+# print(text)
