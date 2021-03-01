@@ -4,9 +4,12 @@ from newspaper import Article
 #
 # nltk.download('punkt')
 
-url = 'https://en.wikipedia.org/wiki/Cartier_(jeweler)'  # neutral 0.06818181818181818
-# url = 'https://home.kpmg/ua/en/home/media/press-releases/2019/12/improvement-of-legislation-on-amber.html'  # positive 0.21212121212121213
-# url = 'https://www.cfr.org/global-conflict-tracker/conflict/conflict-ukraine'  # negative 0.08522727272727272
+# url = 'https://en.wikipedia.org/wiki/Cartier_(jeweler)'
+# neutral 0.06818181818181818
+# url = 'https://home.kpmg/ua/en/home/media/press-releases/2019/12/improvement-of-legislation-on-amber.html'
+# positive 0.21212121212121213
+url = 'https://www.euronews.com/2021/02/16/ukrainian-man-invents-murder-to-get-police-to-clear-snow-from-his-road'
+# negative -0.17812499999999998
 
 
 article = Article(url)
